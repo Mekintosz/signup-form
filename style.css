@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel:wght@400;600&family=Playfair+Display&family=Roboto:wght@300&display=swap');
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Martel', sans-serif;
+} 
+
+body {
+  display: flex;
+  justify-content: center;
+  
+}
+
+.outer {
+  width: 70vw;
+  height: 100vw;
+  
+}
+
+#background {
+    background-image: url("./ocean.jpg");
+    width: 40vw;
+    height: 100vh;
+    background-color: #135b8e67;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* display: flex;
+    align-items: center; */
+  }
+  
+ #spanner {
+    z-index: 1;
+    height: 6.5em;
+    font-size: 22px;
+    font-weight: 600;
+    background: #152b3896;
+    flex: 1;
+  }
+
+  #spanner,
+  #logo,
+  #background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #brand {
+    z-index: 3; /* put .gold-box above .green-box and .dashed-box */
+    color: aliceblue;
+    letter-spacing: 0.4em;
+    
+  }
+
+ #logo {
+    background-image: url(./waves-navy.png);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: 7em;
+    z-index: 2; /* put .green-box above .dashed-box */
+    height: 7em;
+  }
+  
+  .outer {
+    display: flex;
+  }
+
+  .right {
+    display: flex;
+    flex-direction: column;
+    background: #4A6473;
+  }
+
+  form {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 1em;
+  }
+
+  #submit {
+    grid-column: 2 / 3;
+    width: 400px;
+    height : 40px;
+  }
+
+  input {
+    width: 500px;
+  }
+  /* .inner {
+  } */
