@@ -18,36 +18,36 @@
         </div>
         <div class="inner right">
             <div>
-                <h3>This site is only for real see wolfs. If you are one then need to sign up for an account. If not no worries sign up for a chance to win a yearly delivery of lobster.</h3>
+                <h2>This site is only for real see wolfs. If you are one then need to sign up for an account. If not no worries sign up for a chance to win a yearly delivery of lobster.</h2>
             </div>
             <div>
-                <form action="">
-                    <h4>Let's put the sails on.</h4>
-                    <div><label for="firstname">NAME</label>
-                        <input type="text" name="firstname">
+                <form id="sign">
+                    <h3>Let's put the sails on.</h3>
+                    <div><label for="firstname">NAME*</label>
+                        <input type="text" name="firstname" minlength="5">
                     </div>
                     <div><label for="surname">SURNAME</label>
                         <input type="text" name="surname">
                     </div>
-                    <div><label for="email">E MAIL</label>
+                    <div><label for="email" required>E MAIL*</label>
                         <input type="email" name="email">
                     </div>
                     <div><label for="phone">PHONE</label>
                         <input type="text" name="phone">
                     </div>
-                    <div><label for="password">PASSWORD</label>
+                    <div><label for="password" required>PASSWORD*</label>
                         <input type="text">
                     </div>
-                    <div><label for="password">CONFIRM PASSWORD</label>
+                    <div><label for="password" required>CONFIRM PASSWORD*</label>
                         <input type="text">
                     </div>
                 </form>
             </div>
            
-            <div>
-                <button id="submit">SUBMIT AND SAIL</button>
-                <p>Alredy have a boat? ?<a href="">Log-in here.</a></p>
-            </div>
+           
+                <button type="submit" id="submit" form="sign">Submit and Sail</button>
+                <p>Already have a boat? <a href="">Log-in here.</a></p>
+           
         </div>
         
     </div>
